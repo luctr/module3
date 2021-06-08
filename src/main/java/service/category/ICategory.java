@@ -1,4 +1,4 @@
 package service.category;
 
-public interface ICategory extends InterFaceService {
+public interface ICategory {
 }
