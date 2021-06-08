@@ -27,15 +27,18 @@
         <td>Color</td>
         <td>Description</td>
         <td>Category</td>
+        <td>Action</td>
     </tr>
     <c:forEach items="${product}" var="product">
 
         <tr>
             <td>${product.id}</td>
-            <td>${product.name}</td>
-            <td>${product.address}</td>
-            <td>${product.age}</td>
-            <td>${product.licenseName}</td>
+            <td>${product.product_name}</td>
+            <td>${product.price}</td>
+            <td>${product.quantity}</td>
+            <td>${product.color}</td>
+            <td>${product.description}</td>
+            <td>${product.category_name}</td>
             <td>
                 <form action="/product" method="get">
                     <input type="number" name="id" value="${product.id}" hidden>

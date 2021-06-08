@@ -15,7 +15,7 @@ import java.util.List;
 
 @WebServlet(
         name = "/ProductController",
-        value = "product"
+        value = "/product"
 )
 public class ProductController extends HttpServlet {
     private IProducts products = new ProductService();
